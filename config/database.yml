@@ -1,0 +1,28 @@
+#postgres 9.3
+
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: project_development
+  pool: 5
+  username: todd
+  password: Tpn11ama7
+
+test: &TEST
+  adapter: postgresql
+  encoding: utf8
+  database: project_test
+  pool: 5
+  username: todd
+  password: Tpn11ama7
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: project_production
+  pool: 5
+  username: todd
+  password: Tpn11ama7
+
+cucumber:
+  <<: *TEST
